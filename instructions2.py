@@ -1,4 +1,4 @@
-# this function prints the instructions when run
+# this function prints the instructions if the user needs them
 
 def instructions():
     print("when the quiz starts you will be asked ten questions")
