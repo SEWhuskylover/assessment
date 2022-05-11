@@ -1,4 +1,8 @@
-# this component will test the user with a quiz and keep track of their marks
+# this is the final version which will ask the user for instructions and then test them they then get a mark
+# out of then and are asked if they want to play again if not they are thanked before the program ends
+
+
+# this function prints out the instructions for the game when run
 
 def instructions():
     print("when the quiz starts you will be asked ten questions")
@@ -6,13 +10,17 @@ def instructions():
     print("you will translate the number to english \nand type it before pressing ender to continue with the quiz")
 
 
+# when run this function asks the user 10 questions and grades them based on how well they do
+
 def quiz():
+    # this variable keeps track of the users score during the test
     score = 0
+    # the answers are printed for the user and they have as much time as they need to memorize it
     print("the quiz has starting")
     print("here are a look of the answers")
     print(" 1 Tahi\n 2 rua\n 3 toru\n 4 wha\n 5 rima\n 6 ono\n 7 whitu\n 8 waru\n 9 iwa\n 10 tekau")
     input("enter to start the quiz")
-
+    # the questions that will be asked in the quiz
     print("toru")
     answer = input("")
     if answer == "3":
@@ -101,9 +109,11 @@ def quiz():
     else:
         print("wrong")
         print("the answer was 2")
-
+    # prints the users score after the quiz ends
     print(f"yours score was {score} out of 10")
 
+
+# this function will thank the user for playing and say goodbye
 
 def thanks():
     print(" ********** ")
@@ -121,7 +131,7 @@ def thanks():
 
 # main routine
 
-# while loop stops the user entering answers other than yes or no
+# while loop stops the user entering answers other than yes or no after being asked if they need instructions
 push_back = 0
 while push_back == 0:
     yes_no = input("do you need instructions\n ")
@@ -137,8 +147,10 @@ while push_back == 0:
         print("please enter yes or no")
         push_back = 0
 
+# this runs the quiz function
 quiz()
 
+# this while loop lets asks the user if they want to play again and stops them entering answers other than yes or no
 forward = 0
 while forward == 0:
     play_again = input("do you want to play again\n")
@@ -150,4 +162,5 @@ while forward == 0:
     else:
         print("please enter yes or no")
 
+# this runs the thanks function to thank the user for playing
 thanks()
