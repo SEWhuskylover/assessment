@@ -135,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="thanksforplaying" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="thanksforplaying2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="assessment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,7 +147,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thanksforplaying.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\creep\OneDrive - Middleton Grange School\digi tech\programming\assessment\thanksforplaying2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,7 +160,7 @@
       <list>
         <item itemvalue="Python.final copy" />
         <item itemvalue="Python.instructions1" />
-        <item itemvalue="Python.thanksforplaying" />
+        <item itemvalue="Python.thanksforplaying2" />
         <item itemvalue="Python.sad" />
         <item itemvalue="Python.playagain2" />
       </list>

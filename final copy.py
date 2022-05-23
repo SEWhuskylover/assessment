@@ -21,7 +21,7 @@ def quiz():
     score = 0
     # the answers are printed for the user ,and they have as much time
     # as they need to memorize it
-    print("the quiz has starting")
+    print("the quiz is starting")
     print("here are a look of the answers")
     print(" 1 Tahi\n 2 rua\n 3 toru\n 4 wha\n 5 rima\n 6 ono\n"
           " 7 whitu\n 8 waru\n 9 iwa\n 10 tekau")
