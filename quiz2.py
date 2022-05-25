@@ -97,4 +97,3 @@ else:
     print("the answer was 2")
 
 print(f"yours score was {score} out of 10")
-

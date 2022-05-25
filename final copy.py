@@ -1,10 +1,12 @@
-# this is the final version which will ask the user for
-# instructions and then test them they then get a mark
-# out of then and are asked if they want to play again
-# if not they are thanked before the program ends
-
+""" this is the final version which will ask the user for
+instructions and then test them they then get a mark
+out of then and are asked if they want to play again
+if not they are thanked before the program ends
+"""
+import random
 
 # this function prints out the instructions for the game when run
+
 
 def instructions():
     print("when the quiz starts you will be asked ten questions")
@@ -26,107 +28,32 @@ def quiz():
     print(" 1 Tahi\n 2 rua\n 3 toru\n 4 wha\n 5 rima\n 6 ono\n"
           " 7 whitu\n 8 waru\n 9 iwa\n 10 tekau")
     input("enter to start the quiz")
-    # the questions that will be asked in the quiz
-    # maori number 3
-    print("toru")
-    answer = input("")
-    if answer == "3":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 3")
-
-    # maori number 5
-    print("rima")
-    answer = input("")
-    if answer == "5":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 5")
-
-    # maori number 10
-    print("tekau")
-    answer = input("")
-    if answer == "10":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 10")
-
-    # maori number 1
-    print("tahi")
-    answer = input("")
-    if answer == "1":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 1")
-
-    # maori number 4
-    print("wha")
-    answer = input("")
-    if answer == "4":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 4")
-
-    # maori number 6
-    print("ono")
-    answer = input("")
-    if answer == "6":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 6")
-
-    # maori number 7
-    print("whitu")
-    answer = input("")
-    if answer == "7":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 7")
-
-    # maori number 9
-    print("iwa")
-    answer = input("")
-    if answer == "9":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 9")
-
-    # maori number 8
-    print("waru")
-    answer = input("")
-    if answer == "8":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 8")
-
-    # maori number 2
-    print("rua")
-    answer = input("")
-    if answer == "2":
-        print("correct")
-        score += 1
-    else:
-        print("wrong")
-        print("the answer was 2")
+    # the questions that will be asked
+    questions = ["toru", "rima", "tahi", "iwa", "rua", "waru", "tekau", "ono", "wha", "whitu"]
+    # the answers that the questions will be compared to
+    answer = ["3", "5", "1", "9", "2", "8", "10", "6", "4", "7"]
+    # a loop to go thought this code 10 times
+    loop = 0
+    stopper = 9
+    while loop != 10:
+        # this randomizes the questions
+        number_choice = random.randint(0, stopper)
+        # takes the answers and questions from the lists
+        current_q = questions.pop(number_choice)
+        current_a = answer.pop(number_choice)
+        # asks the user the question and get their response
+        print(current_q)
+        user_a = input()
+        # tells the user if they were correct and corrects them if they are wrong
+        if current_a == user_a:
+            print("correct")
+            score += 1
+        else:
+            print(f"the answer was {current_a}")
+        loop += 1
+        stopper -= 1
     # prints the users score after the quiz ends
+
     print(f"yours score was {score} out of 10")
 
 
